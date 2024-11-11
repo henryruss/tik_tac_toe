@@ -7,9 +7,13 @@ class Board
 
   def play_game
     counter = 0
-    until winner? 
+    until winner? || counter == 9
       place(which_symbol(counter))
       counter += 1
+      if counter == 9 && !winner?
+        puts "DRAW"
+        break
+      end
     end
   end
 end
