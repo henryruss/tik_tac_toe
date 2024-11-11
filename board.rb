@@ -13,7 +13,7 @@ class Board
       if counter == 9 && !winner?
         puts "DRAW"
         break
-      end
+      endgit
     end
   end
 end
